@@ -232,6 +232,12 @@ img { max-width: 100%; display: block; }
 
 /* Hero backgrounds */
 .hero-bg { position: absolute; inset: 0; }
+.hero-photo {
+  position: absolute; inset: 0;
+  background: url('hero-barber.jpeg') center center / cover no-repeat;
+  opacity: 0.35;
+  z-index: 0;
+}
 .hero-grain {
   position: absolute; inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
@@ -240,14 +246,14 @@ img { max-width: 100%; display: block; }
 }
 .hero-gradient {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
-              radial-gradient(ellipse 50% 80% at 20% 80%, rgba(201, 168, 76, 0.04) 0%, transparent 50%),
-              linear-gradient(180deg, var(--black) 0%, #0d0c08 50%, var(--black) 100%);
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse 50% 80% at 20% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 50%),
+              linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(13,12,8,0.55) 50%, rgba(0,0,0,0.75) 100%);
   z-index: 2;
 }
 .hero-vignette {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 70% 70% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%);
+  background: radial-gradient(ellipse 70% 70% at 50% 50%, transparent 40%, rgba(0,0,0,0.75) 100%);
   z-index: 3;
 }
 
